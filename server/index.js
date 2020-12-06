@@ -1,19 +1,32 @@
 const express = require('express');
 const db = require('./config/db');
+const cors = require('cors');
 const app = express();
 
 const PORT = 3001;
 
-app.get('/', (req, res) => {});
+app.use(cors());
+app.use(express.json());
 
-app.post('./api/create', (req, res) => {
+app.get('/', (req, res) => {
+    res.send('hafsafsf');
+});
+
+app.post('/api/create', (req, res) => {
+    const username = req.body.userName;
+    const title = req.body.title;
+    const text = req.body.text;
+
+    console.log(username + title + text)
+
     db.query(
-        "INSERT INTO posts (title, post_text, user_name) VALUES ('a title', 'safsafgasfgsafs', 'jereltech')", (err, result) => {
+        "INSERT INTO posts (title, post_text, user_name) VALUES (?,?,?)", [title, text, username],
+        (err, result) => {
             if (err) {
                 console.log(err)
-            } else {
-                console.log(result);
-            }
+            } 
+
+            console.log(result);
         });
 })
 
