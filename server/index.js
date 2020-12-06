@@ -8,9 +8,33 @@ const PORT = 3001;
 app.use(cors());
 app.use(express.json());
 
-app.get('/', (req, res) => {
-    res.send('hafsafsf');
+app.get('/api/get', (req, res) => {
+    db.query(
+        "SELECT * FROM posts",
+        (err, result) => {
+            if (err) {
+                console.log(err)
+            } 
+
+            res.send(result);
+    });
 });
+
+app.get('/api/getFromId/:id', (req, res) => {
+    
+    const id = req.params.id
+    db.query(
+        "SELECT * FROM posts WHERE id = ?", id,
+        (err, result) => {
+            if (err) {
+                console.log(err)
+            } 
+
+            res.send(result);
+    });
+});
+
+
 
 app.post('/api/create', (req, res) => {
     const username = req.body.userName;
@@ -29,6 +53,7 @@ app.post('/api/create', (req, res) => {
             console.log(result);
         });
 })
+
 
 app.listen(PORT, () => {
     console.log(`SERVER running on port ${PORT}`);
