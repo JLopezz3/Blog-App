@@ -55,6 +55,6 @@ app.post('/api/create', (req, res) => {
 })
 
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log(`SERVER running on port ${PORT}`);
 });
