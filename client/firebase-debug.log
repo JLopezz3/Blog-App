@@ -1,0 +1,68 @@
+[debug] [2020-12-07T18:51:53.238Z] ----------------------------------------------------------------------
+[debug] [2020-12-07T18:51:53.239Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jerel\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-12-07T18:51:53.239Z] CLI Version:   8.17.0
+[debug] [2020-12-07T18:51:53.239Z] Platform:      win32
+[debug] [2020-12-07T18:51:53.240Z] Node Version:  v12.18.3
+[debug] [2020-12-07T18:51:53.241Z] Time:          Mon Dec 07 2020 12:51:53 GMT-0600 (Central Standard Time)
+[debug] [2020-12-07T18:51:53.241Z] ----------------------------------------------------------------------
+[debug] [2020-12-07T18:51:53.241Z] 
+[debug] [2020-12-07T18:51:53.245Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-12-07T18:51:53.246Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Jerel\Desktop\Blog-App\client
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using blog-app-7a4a8. 
+[debug] [2020-12-07T18:51:56.689Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/blog-app-7a4a8  
+ 
+[debug] [2020-12-07T18:51:56.928Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 07 Dec 2020 18:50:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2020-12-07T18:52:03.867Z] >>> HTTP REQUEST GET https://www.gstatic.com/firebasejs/releases.json  
+ 
+[debug] [2020-12-07T18:52:04.020Z] <<< HTTP RESPONSE 200 {"accept-ranges":"bytes","vary":"Accept-Encoding, Origin","content-type":"application/json","cross-origin-resource-policy":"cross-origin","content-length":"1411","date":"Mon, 07 Dec 2020 18:50:22 GMT","expires":"Mon, 07 Dec 2020 19:40:22 GMT","last-modified":"Fri, 04 Dec 2020 02:12:08 GMT","x-content-type-options":"nosniff","server":"sffe","x-xss-protection":"0","cache-control":"public, max-age=3000","age":"0","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""}
+[info] +  Wrote build/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\Jerel\Desktop\Blog-App 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=283838699&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2020-12-07T18:52:07.103Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"5b3fc99f1947cf22b85e","redirect_uri":"http://localhost:9005","state":"283838699"}
+[debug] [2020-12-07T18:52:07.342Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Mon, 07 Dec 2020 18:50:25 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","status":"200 OK","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","etag":"W/\"fadbaf583ae9b0628bdf2c00f066f0bb\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker.js gist.github.com/socket-worker.js","x-github-request-id":"D289:76FB:1ADA011:2838660:5FCE7971"}
+[debug] [2020-12-07T18:52:07.343Z] >>> HTTP REQUEST GET https://api.github.com/user  
+ 
+[debug] [2020-12-07T18:52:07.636Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Mon, 07 Dec 2020 18:50:25 GMT","content-type":"application/json; charset=utf-8","content-length":"1375","status":"200 OK","cache-control":"private, max-age=60, s-maxage=60","vary":"Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding, Accept, X-Requested-With","etag":"\"a87dd092c30e5d6003af39161b551af4365b6fa56cfe8e724887700e9ac6d4a3\"","last-modified":"Mon, 07 Dec 2020 02:04:36 GMT","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4994","x-ratelimit-reset":"1607369647","x-ratelimit-used":"6","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","x-github-request-id":"D28B:0BF5:CDF22F:22C9C3A:5FCE7971"}
+[info] 
+[info] +  Success! Logged into GitHub as JLopezz3 
+[info] 
+[debug] [2020-12-07T18:52:25.659Z] >>> HTTP REQUEST GET https://api.github.com/repos/Blog-App/actions/secrets/public-key?type=owner  
+ 
+[debug] [2020-12-07T18:52:25.895Z] <<< HTTP RESPONSE 404 {"server":"GitHub.com","date":"Mon, 07 Dec 2020 18:50:44 GMT","content-type":"application/json; charset=utf-8","content-length":"74","status":"404 Not Found","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4993","x-ratelimit-reset":"1607369647","x-ratelimit-used":"7","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"D2A5:6500:E44134:2373238:5FCE7983"}
+[debug] [2020-12-07T18:52:25.895Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
